@@ -1,0 +1,5 @@
+/* Onlyfunds App JS
+   We'll add real code later (Firebase, dynamic wishes, login checks).
+   For now, just confirm the JS file loads.
+*/
+console.log("Onlyfunds app.js loaded.");

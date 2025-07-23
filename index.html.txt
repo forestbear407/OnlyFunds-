@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META INFO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onlyfunds – Give Generously</title>
+  <meta name="description" content="Onlyfunds helps generous people fund real wishes from real people. Submit a wishlist, browse needs, and make an impact." />
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- APP LOGIC (will fill later) -->
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- HEADER + NAVIGATION -->
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo"><a href="index.html">Onlyfunds</a></h1>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="login.html">Creator Login</a>
+        <a href="wishlist.html">My Wishlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="wrap hero-content">
+      <h2>Got Money? Change Someone’s Day.</h2>
+      <p>Onlyfunds lets generous people fund *exact* items real people need — books, meds, tech, travel, anything.</p>
+      <div class="hero-buttons">
+        <a href="login.html" class="button">Create a Wishlist</a>
+        <a href="#featured" class="button outline">Browse Wishes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WISHES (STATIC FOR NOW; WILL LOAD DYNAMICALLY LATER) -->
+  <section id="featured" class="section">
+    <div class="wrap">
+      <h3>Featured Wishes</h3>
+      <div class="card-grid" id="featured-wishes">
+        <!-- These 3 sample cards are hard-coded so page isn’t empty.
+             Later, JavaScript will replace these with real data. -->
+
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250?text=Textbooks" alt="Biology Textbook Set" />
+          <div class="card-content">
+            <h4>Biology Textbooks for Uni</h4>
+            <p class="card-meta">Category: Education • €120</p>
+            <p class="card-desc">First-year student can’t afford required bio books.</p>
+            <a href="#" class="button small disabled" aria-disabled="true">Sample</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250?text=Headphones" alt="Noise-cancelling headphones" />
+          <div class="card-content">
+            <h4>Noise-Cancelling Headphones</h4>
+            <p class="card-meta">Category: Health • €85</p>
+            <p class="card-desc">Helps with sensory overload during chemo days.</p>
+            <a href="#" class="button small disabled" aria-disabled="true">Sample</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250?text=Laptop" alt="Refurbished laptop" />
+          <div class="card-content">
+            <h4>Refurbished Laptop for Coding</h4>
+            <p class="card-meta">Category: Tech • €300</p>
+            <p class="card-desc">Dreaming of learning programming; needs a starter laptop.</p>
+            <a href="#" class="button small disabled" aria-disabled="true">Sample</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section alt">
+    <div class="wrap hiw">
+      <h3>How Onlyfunds Works</h3>
+      <ol>
+        <li>Create a wishlist (login required).</li>
+        <li>Add items with links (Amazon, Vinted, anywhere).</li>
+        <li>Share your list — generous people can buy directly.</li>
+      </ol>
+      <p class="note">Optional: donors can also send money via PayPal so we purchase for verified needs.</p>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="section cta">
+    <div class="wrap">
+      <h3>Ready to Make a Wish?</h3>
+      <a href="login.html" class="button big">Sign In & Start</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2025 Onlyfunds. Built by me to connect generosity with need.</p>
+      <p class="tiny">Demo MVP. Data not guaranteed. For educational use.</p>
+    </div>
+  </footer>
+</body>
+</html>
