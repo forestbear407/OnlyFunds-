@@ -1,5 +1,25 @@
-/* Onlyfunds App JS
-   We'll add real code later (Firebase, dynamic wishes, login checks).
-   For now, just confirm the JS file loads.
-*/
-console.log("Onlyfunds app.js loaded.");
+// Handle login
+const loginForm = document.getElementById('loginForm');
+if (loginForm) {
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        document.getElementById('loginMessage').innerText = `Welcome, ${username}! You are now logged in.`;
+    });
+}
+
+// Handle wishlist
+const wishlistForm = document.getElementById('wishlistForm');
+if (wishlistForm) {
+    wishlistForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('itemName').value;
+        const link = document.getElementById('itemLink').value;
+
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<a href="${link}" target="_blank">${name}</a>`;
+        document.getElementById('wishlistItems').appendChild(listItem);
+
+        wishlistForm.reset();
+    });
+}
